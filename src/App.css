@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.App{
+    display: grid;
+    place-items: center;
+    background-color: #945398;
+    height: 100vh;
+}
+
+.main{
+    background: #202229;
+    min-width: 60vmin;
+    font-size: 3vmin;
+    padding: 2.5rem 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.header{
+    color: #f5f5f5;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+.form .input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.form .btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: #945398;
+    color: #f5f5f5;
+}
+
+.todoList{
+    list-style: none;
+}
+.todoItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+}
+
+.todoItem input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+}
+.completed{
+    text-decoration: line-through;
+}
+
+.todoItem button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.todoItem button:first-of-type{
+    background-color: red;
+}
+.todoItem button:last-of-type{
+    background-color: green;
+}
